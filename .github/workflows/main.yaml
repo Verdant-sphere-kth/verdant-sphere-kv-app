@@ -1,0 +1,16 @@
+name : "Main Workflow"
+
+on:
+    pull_request:
+        branches:
+          - dev
+
+jobs:
+    build:
+        name: "Build laravel App"
+        runs-on: ubuntu-latest
+        steps:
+
+            - name: "Hello World"
+              run: |
+                echo "Hello World"
